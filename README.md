@@ -39,21 +39,21 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 # Corrected HTML content
-content = """<html>
-  <body>
-    <h1 allign="centre"> Device Specifications</h1>
-    <h2 allign ="right">(BINDHUJAA S) </h2>
-    <h3 allign="right">(24901119)</h3>
-    <ol type="i">
-        <li> Device Name-DESKTOP-MOHHBTU</li>
-        <li> Processor-13 th Gen Intel core</li>
-        <li> Installed RAM -16.0 GB (15.7 GB usable)/li>
-        <li> Device ID-15EEA3B2-7EF5-4DEC-903D-577382C3C005</li>
-        <li> Product ID- 00342-42709-07172-AAOEM</li>
-        <li> System tyope- 64-bit operating system, x64-based processor</li>
-        <li> Pen and Touch-No pen or touch input is available for this display </li>
-    </ol>
-  </body>
+content = """
+<!doctype html>
+<html>
+<head>
+<title> My Web Server</title>
+</head>
+<body>
+<center><h1>TCP/IP PROTOCOLS</h1><br>
+</center>
+<h3>
+1. Application Layer Protocols - HTTP,FTP,DNS<br>
+2. Transport Layer Protocols - TCP/UDP<br>
+3. Internet Layer Protocols - IPV4/IPV6<br>
+4. Link Layer Protocols - MAC<br>
+</body>
 </html>
 """
 class myhandler(BaseHTTPRequestHandler):
@@ -70,7 +70,8 @@ httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![alt text](<Screenshot 2025-03-27 154701.png>)
+
+![alt text](<Screenshot 2025-04-10 210602.png>)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
